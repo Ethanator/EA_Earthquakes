@@ -27,7 +27,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view
-    NSString *stream = @"http://www.youtube.com/watch?v=FhUFLJ6tD9k";
+    //NSString *stream = @"http://www.youtube.com/watch?v=FhUFLJ6tD9k";
+    NSString *stream = @"/Resource/HaitiVideo.mp4";
     NSURL *url = [NSURL URLWithString:stream];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_video loadRequest:request];

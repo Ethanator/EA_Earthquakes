@@ -9,6 +9,8 @@
 #import "EarthquakeShakeTableViewController.h"
 
 @interface EarthquakeShakeTableViewController ()
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+
 
 @end
 
@@ -27,6 +29,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    CGAffineTransform sliderRotation = CGAffineTransformIdentity;
+    sliderRotation = CGAffineTransformRotate(sliderRotation, -(M_PI / 2));
+    self.slider.transform = sliderRotation;
+}
+
+- (void)viewDidLayoutSubviews
+{
 }
 
 - (void)didReceiveMemoryWarning
