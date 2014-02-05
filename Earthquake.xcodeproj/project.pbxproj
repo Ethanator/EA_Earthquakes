@@ -21,6 +21,8 @@
 		0F6337FA1866A59D00FB0BA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6337DC1866A59D00FB0BA0 /* UIKit.framework */; };
 		0F6338021866A59D00FB0BA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0F6338001866A59D00FB0BA0 /* InfoPlist.strings */; };
 		0F6338041866A59D00FB0BA0 /* EarthquakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6338031866A59D00FB0BA0 /* EarthquakeTests.m */; };
+		0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */; };
+		0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		0F6337FF1866A59D00FB0BA0 /* EarthquakeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EarthquakeTests-Info.plist"; sourceTree = "<group>"; };
 		0F6338011866A59D00FB0BA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0F6338031866A59D00FB0BA0 /* EarthquakeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarthquakeTests.m; sourceTree = "<group>"; };
+		0FD5899718A1B4720098761F /* EarthquakeVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeVideoViewController.h; sourceTree = SOURCE_ROOT; };
+		0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeVideoViewController.m; sourceTree = SOURCE_ROOT; };
+		0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeShakeTableViewController.h; sourceTree = "<group>"; };
+		0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeShakeTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +118,13 @@
 		0F6337DE1866A59D00FB0BA0 /* Earthquake */ = {
 			isa = PBXGroup;
 			children = (
+				0FD5899718A1B4720098761F /* EarthquakeVideoViewController.h */,
+				0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */,
 				0F6337E71866A59D00FB0BA0 /* EarthquakeAppDelegate.h */,
 				0F6337E81866A59D00FB0BA0 /* EarthquakeAppDelegate.m */,
 				0F6337EA1866A59D00FB0BA0 /* Main.storyboard */,
+				0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */,
+				0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */,
 				0F6337ED1866A59D00FB0BA0 /* EarthquakeViewController.h */,
 				0F6337EE1866A59D00FB0BA0 /* EarthquakeViewController.m */,
 				0F6337F01866A59D00FB0BA0 /* Images.xcassets */,
@@ -253,6 +263,8 @@
 				0F6337EF1866A59D00FB0BA0 /* EarthquakeViewController.m in Sources */,
 				0F6337E51866A59D00FB0BA0 /* main.m in Sources */,
 				0F6337E91866A59D00FB0BA0 /* EarthquakeAppDelegate.m in Sources */,
+				0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */,
+				0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +473,7 @@
 				0F6338091866A59D00FB0BA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F63380A1866A59D00FB0BA0 /* Build configuration list for PBXNativeTarget "EarthquakeTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +482,7 @@
 				0F63380C1866A59D00FB0BA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

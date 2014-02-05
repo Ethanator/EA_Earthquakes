@@ -10,8 +10,6 @@
 
 @interface EarthquakeViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIWebView *video;
-
-- (IBAction)playVideo:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *videoButton;
 
 @end

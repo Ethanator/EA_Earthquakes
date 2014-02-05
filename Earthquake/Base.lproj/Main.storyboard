@@ -29,6 +29,9 @@
                                 <state key="normal" title="Simulator">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="CVI-D3-HCp" kind="modal" id="e7q-HB-8gp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLo-ib-dbf">
                                 <rect key="frame" x="137" y="244" width="46" height="30"/>
@@ -38,10 +41,35 @@
                                 </state>
                                 <connections>
                                     <action selector="playVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nko-y8-8D4"/>
+                                    <segue destination="J9f-Wk-sr0" kind="modal" id="KPE-K5-NWG"/>
                                 </connections>
                             </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="video" destination="uF8-zu-UiM" id="IwZ-9f-fUN"/>
+                        <outlet property="videoButton" destination="kh9-bI-dsS" id="4g2-Ng-B1n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="235" y="66"/>
+        </scene>
+        <!--Earthquake Video View Controller-->
+        <scene sceneID="l4E-1b-5sa">
+            <objects>
+                <viewController id="J9f-Wk-sr0" customClass="EarthquakeVideoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6rw-P4-fwb"/>
+                        <viewControllerLayoutGuide type="bottom" id="7x8-v2-h2N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QPK-uB-jST">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uF8-zu-UiM">
-                                <rect key="frame" x="0.0" y="282" width="327" height="286"/>
+                                <rect key="frame" x="6" y="83" width="327" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
@@ -49,11 +77,30 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="video" destination="uF8-zu-UiM" id="IwZ-9f-fUN"/>
+                        <outlet property="video" destination="uF8-zu-UiM" id="mkU-q8-YTT"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySt-4X-wkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="771" y="-546"/>
+        </scene>
+        <!--Earthquake Shake Table View Controller-->
+        <scene sceneID="AGW-Nz-GaQ">
+            <objects>
+                <viewController id="CVI-D3-HCp" customClass="EarthquakeShakeTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KT9-uq-Vu4"/>
+                        <viewControllerLayoutGuide type="bottom" id="7By-bc-TVT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1l6-uD-kHm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WHw-ni-zxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="572"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

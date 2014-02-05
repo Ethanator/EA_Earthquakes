@@ -25,11 +25,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)playVideo:(id)sender {
-    NSString *stream = @"http://www.youtube.com/watch?v=FhUFLJ6tD9k";
-    NSURL *url = [NSURL URLWithString:stream];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [_video loadRequest:request];
-}
 @end
