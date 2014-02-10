@@ -14,6 +14,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *buildingImage;
 @property (weak, nonatomic) IBOutlet UIButton *shakeButton;
+@property (weak, nonatomic) IBOutlet UIButton *replayButton;
 
 @end
 
@@ -30,6 +31,7 @@
 
 - (void)viewDidLoad
 {
+    self.replayButton.hidden = TRUE;
     _slideLabel.text = [NSString stringWithFormat:@"%0.1f", _slider.value];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
@@ -37,6 +39,7 @@
     [_slider addTarget:self action:@selector(sliderChanged:) forControlEvents:UIControlEventValueChanged];
     
     [self.shakeButton addTarget:self action:@selector(shakePressed:) forControlEvents:UIControlEventTouchDown];
+    [self.replayButton addTarget:self action:@selector(replayPressed:) forControlEvents:UIControlEventTouchDown];
     
     //debugging
     NSAssert(self.buildingImage, @"self.imageView is nil. Check your IBOutlet connections");
@@ -58,12 +61,29 @@
 {
 }
 
+- (void)replayPressed:(id)sender
+{
+    UIImage* nextImage = [UIImage imageNamed:@"houseTest1.png"];
+    NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
+    self.buildingImage.image = nextImage;
+    
+    self.shakeButton.hidden = FALSE;
+    self.slideLabel.hidden = FALSE;
+    self.slider.hidden = FALSE;
+    self.replayButton.hidden = TRUE;
+}
+
 - (void)shakePressed:(id)sender
 {
     if (sender == _shakeButton && _slider.value > 4.9){
         UIImage* nextImage = [UIImage imageNamed:@"houseTest2.png"];
         NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
         self.buildingImage.image = nextImage;
+        
+        self.shakeButton.hidden = TRUE;
+        self.slideLabel.hidden = TRUE;
+        self.slider.hidden = TRUE;
+        self.replayButton.hidden = FALSE;
     }
 }
 

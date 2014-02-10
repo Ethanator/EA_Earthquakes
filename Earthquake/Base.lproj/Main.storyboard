@@ -105,11 +105,20 @@
                                 <rect key="frame" x="73" y="138" width="227" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XvF-sN-obv">
+                                <rect key="frame" x="253" y="72" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Replay">
+                                    <color key="titleColor" red="0.99250594430000005" green="0.1480929966" blue="0.13748875269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="buildingImage" destination="1bf-zL-XTq" id="5Tf-Uf-9gs"/>
+                        <outlet property="replayButton" destination="XvF-sN-obv" id="dao-SL-XEJ"/>
                         <outlet property="shakeButton" destination="ZuZ-PR-c0U" id="iXg-WD-rw8"/>
                         <outlet property="slideLabel" destination="GgO-hG-MRu" id="SQd-rQ-n5t"/>
                         <outlet property="slider" destination="rfV-fd-oiB" id="9xU-Ug-V7z"/>
