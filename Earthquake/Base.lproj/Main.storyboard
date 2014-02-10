@@ -85,26 +85,32 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="rfV-fd-oiB">
-                                <rect key="frame" x="18" y="235" width="284" height="34"/>
+                                <rect key="frame" x="-75" y="240" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZuZ-PR-c0U">
-                                <rect key="frame" x="137" y="493" width="46" height="30"/>
+                                <rect key="frame" x="137" y="427" width="47" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Shake!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GgO-hG-MRu">
-                                <rect key="frame" x="40" y="464" width="42" height="21"/>
+                                <rect key="frame" x="38" y="392" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1bf-zL-XTq">
+                                <rect key="frame" x="81" y="88" width="158" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="buildingImage" destination="1bf-zL-XTq" id="5Tf-Uf-9gs"/>
+                        <outlet property="shakeButton" destination="ZuZ-PR-c0U" id="iXg-WD-rw8"/>
                         <outlet property="slideLabel" destination="GgO-hG-MRu" id="SQd-rQ-n5t"/>
                         <outlet property="slider" destination="rfV-fd-oiB" id="9xU-Ug-V7z"/>
                     </connections>

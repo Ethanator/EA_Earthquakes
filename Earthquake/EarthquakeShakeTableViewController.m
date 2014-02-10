@@ -12,6 +12,8 @@
 @property (weak, nonatomic) IBOutlet UISlider *slider;
 @property (weak, nonatomic) IBOutlet UILabel *slideLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *buildingImage;
+@property (weak, nonatomic) IBOutlet UIButton *shakeButton;
 
 @end
 

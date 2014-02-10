@@ -23,6 +23,8 @@
 		0F6338041866A59D00FB0BA0 /* EarthquakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6338031866A59D00FB0BA0 /* EarthquakeTests.m */; };
 		0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */; };
 		0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */; };
+		472E051118A948F900A0EAA9 /* houseTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E050F18A948F900A0EAA9 /* houseTest1.png */; };
+		472E051218A948F900A0EAA9 /* houseTest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051018A948F900A0EAA9 /* houseTest2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeVideoViewController.m; sourceTree = SOURCE_ROOT; };
 		0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeShakeTableViewController.h; sourceTree = "<group>"; };
 		0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeShakeTableViewController.m; sourceTree = "<group>"; };
+		472E050F18A948F900A0EAA9 /* houseTest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseTest1.png; sourceTree = "<group>"; };
+		472E051018A948F900A0EAA9 /* houseTest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseTest2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 		0F6337DE1866A59D00FB0BA0 /* Earthquake */ = {
 			isa = PBXGroup;
 			children = (
+				472E051318A9490500A0EAA9 /* Resources */,
 				0FD5899718A1B4720098761F /* EarthquakeVideoViewController.h */,
 				0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */,
 				0F6337E71866A59D00FB0BA0 /* EarthquakeAppDelegate.h */,
@@ -160,6 +165,15 @@
 				0F6338001866A59D00FB0BA0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		472E051318A9490500A0EAA9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				472E051018A948F900A0EAA9 /* houseTest2.png */,
+				472E050F18A948F900A0EAA9 /* houseTest1.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F6337F11866A59D00FB0BA0 /* Images.xcassets in Resources */,
+				472E051218A948F900A0EAA9 /* houseTest2.png in Resources */,
 				0F6337E31866A59D00FB0BA0 /* InfoPlist.strings in Resources */,
+				472E051118A948F900A0EAA9 /* houseTest1.png in Resources */,
 				0F6337EC1866A59D00FB0BA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
