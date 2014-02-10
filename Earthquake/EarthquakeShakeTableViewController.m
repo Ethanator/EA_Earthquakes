@@ -46,7 +46,7 @@
     UIImage* firstImage = [UIImage imageNamed:@"houseTest1.png"];
     NSAssert(firstImage, @"firstImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
     
-    _slider.maximumValue = 10.0;
+    _slider.maximumValue = 9.9;
     _slider.minimumValue = 0.0;
     
     _buildingImage.image = firstImage;
@@ -63,7 +63,7 @@
 
 - (void)replayPressed:(id)sender
 {
-    UIImage* nextImage = [UIImage imageNamed:@"houseTest1.png"];
+    UIImage* nextImage = [UIImage imageNamed:@"houseTest0.png"];
     NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
     self.buildingImage.image = nextImage;
     
@@ -75,8 +75,12 @@
 
 - (void)shakePressed:(id)sender
 {
-    if (sender == _shakeButton && _slider.value > 4.9){
-        UIImage* nextImage = [UIImage imageNamed:@"houseTest2.png"];
+    int intIntensity = (int) self.slider.value;
+    NSString *nextImgNum = [NSString stringWithFormat:@"%d",intIntensity];
+    
+    NSString *nextImgName = [NSString stringWithFormat:@"houseTest%@.png", nextImgNum];
+    if (sender == self.shakeButton){
+        UIImage* nextImage = [UIImage imageNamed:nextImgName];
         NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
         self.buildingImage.image = nextImage;
         

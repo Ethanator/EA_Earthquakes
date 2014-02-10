@@ -23,8 +23,16 @@
 		0F6338041866A59D00FB0BA0 /* EarthquakeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6338031866A59D00FB0BA0 /* EarthquakeTests.m */; };
 		0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */; };
 		0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */; };
-		472E051118A948F900A0EAA9 /* houseTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E050F18A948F900A0EAA9 /* houseTest1.png */; };
-		472E051218A948F900A0EAA9 /* houseTest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051018A948F900A0EAA9 /* houseTest2.png */; };
+		472E051E18A972A800A0EAA9 /* houseTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051418A972A700A0EAA9 /* houseTest1.png */; };
+		472E051F18A972A800A0EAA9 /* houseTest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051518A972A700A0EAA9 /* houseTest2.png */; };
+		472E052018A972A800A0EAA9 /* houseTest3.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051618A972A700A0EAA9 /* houseTest3.png */; };
+		472E052118A972A800A0EAA9 /* houseTest4.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051718A972A700A0EAA9 /* houseTest4.png */; };
+		472E052218A972A800A0EAA9 /* houseTest5.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051818A972A700A0EAA9 /* houseTest5.png */; };
+		472E052318A972A800A0EAA9 /* houseTest6.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051918A972A700A0EAA9 /* houseTest6.png */; };
+		472E052418A972A800A0EAA9 /* houseTest7.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051A18A972A700A0EAA9 /* houseTest7.png */; };
+		472E052518A972A800A0EAA9 /* houseTest8.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051B18A972A800A0EAA9 /* houseTest8.png */; };
+		472E052618A972A800A0EAA9 /* houseTest9.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051C18A972A800A0EAA9 /* houseTest9.png */; };
+		472E052718A972A800A0EAA9 /* houseTest0.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051D18A972A800A0EAA9 /* houseTest0.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +69,16 @@
 		0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeVideoViewController.m; sourceTree = SOURCE_ROOT; };
 		0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeShakeTableViewController.h; sourceTree = "<group>"; };
 		0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeShakeTableViewController.m; sourceTree = "<group>"; };
-		472E050F18A948F900A0EAA9 /* houseTest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseTest1.png; sourceTree = "<group>"; };
-		472E051018A948F900A0EAA9 /* houseTest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houseTest2.png; sourceTree = "<group>"; };
+		472E051418A972A700A0EAA9 /* houseTest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest1.png; path = ../houseTest1.png; sourceTree = "<group>"; };
+		472E051518A972A700A0EAA9 /* houseTest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest2.png; path = ../houseTest2.png; sourceTree = "<group>"; };
+		472E051618A972A700A0EAA9 /* houseTest3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest3.png; path = ../houseTest3.png; sourceTree = "<group>"; };
+		472E051718A972A700A0EAA9 /* houseTest4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest4.png; path = ../houseTest4.png; sourceTree = "<group>"; };
+		472E051818A972A700A0EAA9 /* houseTest5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest5.png; path = ../houseTest5.png; sourceTree = "<group>"; };
+		472E051918A972A700A0EAA9 /* houseTest6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest6.png; path = ../houseTest6.png; sourceTree = "<group>"; };
+		472E051A18A972A700A0EAA9 /* houseTest7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest7.png; path = ../houseTest7.png; sourceTree = "<group>"; };
+		472E051B18A972A800A0EAA9 /* houseTest8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest8.png; path = ../houseTest8.png; sourceTree = "<group>"; };
+		472E051C18A972A800A0EAA9 /* houseTest9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest9.png; path = ../houseTest9.png; sourceTree = "<group>"; };
+		472E051D18A972A800A0EAA9 /* houseTest0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest0.png; path = ../houseTest0.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,8 +186,16 @@
 		472E051318A9490500A0EAA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				472E051018A948F900A0EAA9 /* houseTest2.png */,
-				472E050F18A948F900A0EAA9 /* houseTest1.png */,
+				472E051418A972A700A0EAA9 /* houseTest1.png */,
+				472E051518A972A700A0EAA9 /* houseTest2.png */,
+				472E051618A972A700A0EAA9 /* houseTest3.png */,
+				472E051718A972A700A0EAA9 /* houseTest4.png */,
+				472E051818A972A700A0EAA9 /* houseTest5.png */,
+				472E051918A972A700A0EAA9 /* houseTest6.png */,
+				472E051A18A972A700A0EAA9 /* houseTest7.png */,
+				472E051B18A972A800A0EAA9 /* houseTest8.png */,
+				472E051C18A972A800A0EAA9 /* houseTest9.png */,
+				472E051D18A972A800A0EAA9 /* houseTest0.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -253,10 +277,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472E052418A972A800A0EAA9 /* houseTest7.png in Resources */,
+				472E052018A972A800A0EAA9 /* houseTest3.png in Resources */,
+				472E052618A972A800A0EAA9 /* houseTest9.png in Resources */,
+				472E051E18A972A800A0EAA9 /* houseTest1.png in Resources */,
+				472E052318A972A800A0EAA9 /* houseTest6.png in Resources */,
+				472E052718A972A800A0EAA9 /* houseTest0.png in Resources */,
+				472E052518A972A800A0EAA9 /* houseTest8.png in Resources */,
 				0F6337F11866A59D00FB0BA0 /* Images.xcassets in Resources */,
-				472E051218A948F900A0EAA9 /* houseTest2.png in Resources */,
+				472E051F18A972A800A0EAA9 /* houseTest2.png in Resources */,
 				0F6337E31866A59D00FB0BA0 /* InfoPlist.strings in Resources */,
-				472E051118A948F900A0EAA9 /* houseTest1.png in Resources */,
+				472E052218A972A800A0EAA9 /* houseTest5.png in Resources */,
+				472E052118A972A800A0EAA9 /* houseTest4.png in Resources */,
 				0F6337EC1866A59D00FB0BA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
