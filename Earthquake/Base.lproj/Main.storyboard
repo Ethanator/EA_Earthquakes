@@ -94,6 +94,9 @@
                                 <state key="normal" title="Shake!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="shake" destination="CVI-D3-HCp" eventType="touchUpInside" id="fBW-KG-Ybl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GgO-hG-MRu">
                                 <rect key="frame" x="38" y="392" width="42" height="21"/>

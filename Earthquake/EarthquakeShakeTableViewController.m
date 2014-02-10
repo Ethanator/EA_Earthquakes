@@ -20,13 +20,17 @@
 
 @implementation EarthquakeShakeTableViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    if (motion == UIEventSubtypeMotionShake)
+    {
+        [self shakePressed:self];
+    } 
+}
+
+- (BOOL) canBecomeFirstResponder
+{
+    return TRUE;
 }
 
 - (void)viewDidLoad
@@ -73,22 +77,22 @@
     self.replayButton.hidden = TRUE;
 }
 
-- (void)shakePressed:(id)sender
+- (IBAction)shakePressed:(id)sender
 {
     int intIntensity = (int) self.slider.value;
     NSString *nextImgNum = [NSString stringWithFormat:@"%d",intIntensity];
     
     NSString *nextImgName = [NSString stringWithFormat:@"houseTest%@.png", nextImgNum];
-    if (sender == self.shakeButton){
-        UIImage* nextImage = [UIImage imageNamed:nextImgName];
-        NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
-        self.buildingImage.image = nextImage;
+
+    UIImage* nextImage = [UIImage imageNamed:nextImgName];
+    NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
+    self.buildingImage.image = nextImage;
         
-        self.shakeButton.hidden = TRUE;
-        self.slideLabel.hidden = TRUE;
-        self.slider.hidden = TRUE;
-        self.replayButton.hidden = FALSE;
-    }
+    self.shakeButton.hidden = TRUE;
+    self.slideLabel.hidden = TRUE;
+    self.slider.hidden = TRUE;
+    self.replayButton.hidden = FALSE;
+
 }
 
 - (void)sliderChanged:(id)sender
