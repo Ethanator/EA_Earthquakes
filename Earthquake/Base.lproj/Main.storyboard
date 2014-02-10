@@ -102,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1bf-zL-XTq">
-                                <rect key="frame" x="81" y="88" width="158" height="130"/>
+                                <rect key="frame" x="73" y="138" width="227" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>

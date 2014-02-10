@@ -36,8 +36,18 @@
     
     [_slider addTarget:self action:@selector(sliderChanged:) forControlEvents:UIControlEventValueChanged];
     
+    [self.shakeButton addTarget:self action:@selector(shakePressed:) forControlEvents:UIControlEventTouchDown];
+    
+    //debugging
+    NSAssert(self.buildingImage, @"self.imageView is nil. Check your IBOutlet connections");
+    UIImage* firstImage = [UIImage imageNamed:@"houseTest1.png"];
+    NSAssert(firstImage, @"firstImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
+    
     _slider.maximumValue = 10.0;
     _slider.minimumValue = 0.0;
+    
+    _buildingImage.image = firstImage;
+    _buildingImage.contentMode = UIViewContentModeScaleAspectFit;
     
     CGAffineTransform sliderRotation = CGAffineTransformIdentity;
     sliderRotation = CGAffineTransformRotate(sliderRotation, -(M_PI / 2));
@@ -46,6 +56,15 @@
 
 - (void)viewDidLayoutSubviews
 {
+}
+
+- (void)shakePressed:(id)sender
+{
+    if (sender == _shakeButton && _slider.value > 4.9){
+        UIImage* nextImage = [UIImage imageNamed:@"houseTest2.png"];
+        NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
+        self.buildingImage.image = nextImage;
+    }
 }
 
 - (void)sliderChanged:(id)sender
