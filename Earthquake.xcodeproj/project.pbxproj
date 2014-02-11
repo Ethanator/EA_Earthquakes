@@ -38,6 +38,7 @@
 		472E052F18AAB36E00A0EAA9 /* slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E052E18AAB36E00A0EAA9 /* slider.png */; };
 		472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053618AAB6F100A0EAA9 /* thumb2.png */; };
 		472E053918AAB79100A0EAA9 /* slider2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053818AAB79100A0EAA9 /* slider2.png */; };
+		472E053B18AABB4400A0EAA9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053A18AABB4400A0EAA9 /* button1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		472E052E18AAB36E00A0EAA9 /* slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider.png; path = ../slider.png; sourceTree = "<group>"; };
 		472E053618AAB6F100A0EAA9 /* thumb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb2.png; sourceTree = "<group>"; };
 		472E053818AAB79100A0EAA9 /* slider2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider2.png; sourceTree = "<group>"; };
+		472E053A18AABB4400A0EAA9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		0F6337DE1866A59D00FB0BA0 /* Earthquake */ = {
 			isa = PBXGroup;
 			children = (
+				472E053A18AABB4400A0EAA9 /* button1.png */,
 				472E053818AAB79100A0EAA9 /* slider2.png */,
 				472E053618AAB6F100A0EAA9 /* thumb2.png */,
 				472E051318A9490500A0EAA9 /* Resources */,
@@ -306,6 +309,7 @@
 				472E052918A9990700A0EAA9 /* iconTest.png in Resources */,
 				472E051F18A972A800A0EAA9 /* houseTest2.png in Resources */,
 				0F6337E31866A59D00FB0BA0 /* InfoPlist.strings in Resources */,
+				472E053B18AABB4400A0EAA9 /* button1.png in Resources */,
 				472E052218A972A800A0EAA9 /* houseTest5.png in Resources */,
 				472E052118A972A800A0EAA9 /* houseTest4.png in Resources */,
 				472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */,
