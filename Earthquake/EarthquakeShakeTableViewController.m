@@ -45,6 +45,10 @@
     [self.shakeButton addTarget:self action:@selector(shakePressed:) forControlEvents:UIControlEventTouchDown];
     [self.replayButton addTarget:self action:@selector(replayPressed:) forControlEvents:UIControlEventTouchDown];
     
+    [self.slider setMinimumTrackImage:[[UIImage imageNamed:@"slider.png"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal ];
+    [self.slider setMaximumTrackImage:[[UIImage imageNamed:@"slider.png"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal ];
+    [self.slider setThumbImage:[UIImage imageNamed:@"slider2.png"] forState:UIControlStateNormal];
+    
     //debugging
     NSAssert(self.buildingImage, @"self.imageView is nil. Check your IBOutlet connections");
     UIImage* firstImage = [UIImage imageNamed:@"houseTest1.png"];

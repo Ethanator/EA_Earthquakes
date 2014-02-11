@@ -33,6 +33,11 @@
 		472E052518A972A800A0EAA9 /* houseTest8.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051B18A972A800A0EAA9 /* houseTest8.png */; };
 		472E052618A972A800A0EAA9 /* houseTest9.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051C18A972A800A0EAA9 /* houseTest9.png */; };
 		472E052718A972A800A0EAA9 /* houseTest0.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051D18A972A800A0EAA9 /* houseTest0.png */; };
+		472E052918A9990700A0EAA9 /* iconTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E052818A9990700A0EAA9 /* iconTest.png */; };
+		472E052B18AA047300A0EAA9 /* smIconTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E052A18AA047300A0EAA9 /* smIconTest.png */; };
+		472E052F18AAB36E00A0EAA9 /* slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E052E18AAB36E00A0EAA9 /* slider.png */; };
+		472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053618AAB6F100A0EAA9 /* thumb2.png */; };
+		472E053918AAB79100A0EAA9 /* slider2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053818AAB79100A0EAA9 /* slider2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		472E051B18A972A800A0EAA9 /* houseTest8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest8.png; path = ../houseTest8.png; sourceTree = "<group>"; };
 		472E051C18A972A800A0EAA9 /* houseTest9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest9.png; path = ../houseTest9.png; sourceTree = "<group>"; };
 		472E051D18A972A800A0EAA9 /* houseTest0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest0.png; path = ../houseTest0.png; sourceTree = "<group>"; };
+		472E052818A9990700A0EAA9 /* iconTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconTest.png; sourceTree = "<group>"; };
+		472E052A18AA047300A0EAA9 /* smIconTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smIconTest.png; path = ../smIconTest.png; sourceTree = "<group>"; };
+		472E052E18AAB36E00A0EAA9 /* slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slider.png; path = ../slider.png; sourceTree = "<group>"; };
+		472E053618AAB6F100A0EAA9 /* thumb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb2.png; sourceTree = "<group>"; };
+		472E053818AAB79100A0EAA9 /* slider2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +148,8 @@
 		0F6337DE1866A59D00FB0BA0 /* Earthquake */ = {
 			isa = PBXGroup;
 			children = (
+				472E053818AAB79100A0EAA9 /* slider2.png */,
+				472E053618AAB6F100A0EAA9 /* thumb2.png */,
 				472E051318A9490500A0EAA9 /* Resources */,
 				0FD5899718A1B4720098761F /* EarthquakeVideoViewController.h */,
 				0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */,
@@ -148,6 +160,7 @@
 				0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */,
 				0F6337ED1866A59D00FB0BA0 /* EarthquakeViewController.h */,
 				0F6337EE1866A59D00FB0BA0 /* EarthquakeViewController.m */,
+				472E052818A9990700A0EAA9 /* iconTest.png */,
 				0F6337F01866A59D00FB0BA0 /* Images.xcassets */,
 				0F6337DF1866A59D00FB0BA0 /* Supporting Files */,
 			);
@@ -157,6 +170,7 @@
 		0F6337DF1866A59D00FB0BA0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				472E052A18AA047300A0EAA9 /* smIconTest.png */,
 				0F6337E01866A59D00FB0BA0 /* Earthquake-Info.plist */,
 				0F6337E11866A59D00FB0BA0 /* InfoPlist.strings */,
 				0F6337E41866A59D00FB0BA0 /* main.m */,
@@ -186,6 +200,7 @@
 		472E051318A9490500A0EAA9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				472E052E18AAB36E00A0EAA9 /* slider.png */,
 				472E051418A972A700A0EAA9 /* houseTest1.png */,
 				472E051518A972A700A0EAA9 /* houseTest2.png */,
 				472E051618A972A700A0EAA9 /* houseTest3.png */,
@@ -277,6 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				472E052F18AAB36E00A0EAA9 /* slider.png in Resources */,
+				472E053918AAB79100A0EAA9 /* slider2.png in Resources */,
+				472E052B18AA047300A0EAA9 /* smIconTest.png in Resources */,
 				472E052418A972A800A0EAA9 /* houseTest7.png in Resources */,
 				472E052018A972A800A0EAA9 /* houseTest3.png in Resources */,
 				472E052618A972A800A0EAA9 /* houseTest9.png in Resources */,
@@ -285,10 +303,12 @@
 				472E052718A972A800A0EAA9 /* houseTest0.png in Resources */,
 				472E052518A972A800A0EAA9 /* houseTest8.png in Resources */,
 				0F6337F11866A59D00FB0BA0 /* Images.xcassets in Resources */,
+				472E052918A9990700A0EAA9 /* iconTest.png in Resources */,
 				472E051F18A972A800A0EAA9 /* houseTest2.png in Resources */,
 				0F6337E31866A59D00FB0BA0 /* InfoPlist.strings in Resources */,
 				472E052218A972A800A0EAA9 /* houseTest5.png in Resources */,
 				472E052118A972A800A0EAA9 /* houseTest4.png in Resources */,
+				472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */,
 				0F6337EC1866A59D00FB0BA0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
