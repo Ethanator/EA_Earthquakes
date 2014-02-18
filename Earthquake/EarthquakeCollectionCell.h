@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface EarthquakeCollectionCell : UICollectionViewCell
-@property (strong, nonatomic) IBOutlet UIImageView *eqImageView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *eqImageView;
 
 @end
