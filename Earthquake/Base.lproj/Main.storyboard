@@ -28,7 +28,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CVI-D3-HCp" kind="push" id="e7q-HB-8gp"/>
+                                    <segue destination="SFE-lr-Qtg" kind="push" id="J3U-nm-zuV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BLo-ib-dbf">
@@ -40,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="J9f-Wk-sr0" kind="push" id="KPE-K5-NWG"/>
+                                    <segue destination="J9f-Wk-sr0" kind="push" id="mX1-Zm-USh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,7 +54,56 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="516"/>
+            <point key="canvasLocation" x="489" y="612"/>
+        </scene>
+        <!--Earthquake Collection View Controller-->
+        <scene sceneID="9tR-Ug-PeC">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="SFE-lr-Qtg" customClass="EarthquakeCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="YjV-le-FtV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5TW-qP-rAS">
+                            <size key="itemSize" width="138" height="139"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="EQCell" id="2nz-np-6Fj" customClass="EarthquakeCollectionCell">
+                                <rect key="frame" x="0.0" y="64" width="138" height="139"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="138" height="139"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="hIe-0T-RoH">
+                                            <rect key="frame" x="7" y="6" width="124" height="127"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="0.99250594430000005" green="0.1480929966" blue="0.13748875269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="eqImageView" destination="hIe-0T-RoH" id="gEY-0r-fIl"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="SFE-lr-Qtg" id="aOn-ic-FpR"/>
+                            <outlet property="delegate" destination="SFE-lr-Qtg" id="0eb-8k-XTa"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="fjb-Tb-s0j"/>
+                    <connections>
+                        <outlet property="cell" destination="2nz-np-6Fj" id="XdB-E1-Tb4"/>
+                        <segue destination="CVI-D3-HCp" kind="push" id="3A1-Wk-8wc"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="970-Vm-1f3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="597"/>
         </scene>
         <!--Earthquake Video View Controller-->
         <scene sceneID="l4E-1b-5sa">
@@ -72,13 +121,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VVa-01-a5l"/>
                     <connections>
                         <outlet property="video" destination="uF8-zu-UiM" id="mkU-q8-YTT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySt-4X-wkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1647" y="-274"/>
+            <point key="canvasLocation" x="967" y="-82"/>
         </scene>
         <!--Earthquake Shake Table View Controller-->
         <scene sceneID="AGW-Nz-GaQ">
@@ -127,6 +177,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kSv-iJ-fZ7"/>
                     <connections>
                         <outlet property="buildingImage" destination="1bf-zL-XTq" id="5Tf-Uf-9gs"/>
                         <outlet property="replayButton" destination="XvF-sN-obv" id="dao-SL-XEJ"/>
@@ -137,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WHw-ni-zxi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1579" y="516"/>
+            <point key="canvasLocation" x="1419" y="588"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ch7-ic-Obz">
@@ -155,7 +206,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Rc-aJ-poX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="403" y="508"/>
+            <point key="canvasLocation" x="59" y="612"/>
         </scene>
     </scenes>
     <resources>
