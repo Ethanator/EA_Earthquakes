@@ -48,6 +48,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="uwI-mj-6Kf"/>
                     <connections>
+                        <outlet property="simButton" destination="ykq-Zt-WOV" id="ct0-rr-vMP"/>
+                        <outlet property="vidButton" destination="BLo-ib-dbf" id="5SZ-7V-ZKp"/>
                         <outlet property="video" destination="uF8-zu-UiM" id="IwZ-9f-fUN"/>
                         <outlet property="videoButton" destination="kh9-bI-dsS" id="4g2-Ng-B1n"/>
                     </connections>

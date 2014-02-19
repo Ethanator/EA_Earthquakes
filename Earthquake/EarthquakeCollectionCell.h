@@ -10,6 +10,6 @@
 
 @interface EarthquakeCollectionCell : UICollectionViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *eqImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *eqImageView;
 
 @end
