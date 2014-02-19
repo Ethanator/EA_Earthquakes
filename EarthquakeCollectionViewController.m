@@ -51,10 +51,13 @@
 -(EarthquakeCollectionCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     EarthquakeCollectionCell *eqCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"EQCell" forIndexPath:indexPath];
+    
     UIImage *img;
     long row = [indexPath row];
     
     img = [UIImage imageNamed:self.EQImages[row]];
+    eqCell.eqImageView = [[UIImageView alloc] initWithFrame:eqCell.bounds];
+    [eqCell addSubview:eqCell.eqImageView];
     [eqCell.eqImageView setImage:img];
     return eqCell;
 }
