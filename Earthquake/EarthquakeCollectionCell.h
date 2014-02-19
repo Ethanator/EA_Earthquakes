@@ -12,4 +12,5 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *eqImageView;
 
+
 @end
