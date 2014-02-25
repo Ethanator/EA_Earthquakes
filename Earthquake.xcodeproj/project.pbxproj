@@ -39,6 +39,12 @@
 		472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053618AAB6F100A0EAA9 /* thumb2.png */; };
 		472E053918AAB79100A0EAA9 /* slider2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053818AAB79100A0EAA9 /* slider2.png */; };
 		472E053B18AABB4400A0EAA9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053A18AABB4400A0EAA9 /* button1.png */; };
+		47CFBA8118B4009900C21F4D /* EarthquakeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFBA8018B4009900C21F4D /* EarthquakeCollectionViewController.m */; };
+		47CFBA8618B403BE00C21F4D /* Img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CFBA8218B403BE00C21F4D /* Img1.jpg */; };
+		47CFBA8718B403BE00C21F4D /* Img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CFBA8318B403BE00C21F4D /* Img2.jpg */; };
+		47CFBA8818B403BE00C21F4D /* Img3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CFBA8418B403BE00C21F4D /* Img3.jpg */; };
+		47CFBA8918B403BE00C21F4D /* Img4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CFBA8518B403BE00C21F4D /* Img4.jpg */; };
+		47CFBA8C18B4053C00C21F4D /* EarthquakeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFBA8B18B4053C00C21F4D /* EarthquakeCollectionCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +97,14 @@
 		472E053618AAB6F100A0EAA9 /* thumb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb2.png; sourceTree = "<group>"; };
 		472E053818AAB79100A0EAA9 /* slider2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider2.png; sourceTree = "<group>"; };
 		472E053A18AABB4400A0EAA9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		47CFBA7F18B4009900C21F4D /* EarthquakeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeCollectionViewController.h; sourceTree = SOURCE_ROOT; };
+		47CFBA8018B4009900C21F4D /* EarthquakeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeCollectionViewController.m; sourceTree = SOURCE_ROOT; };
+		47CFBA8218B403BE00C21F4D /* Img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Img1.jpg; path = ../Img1.jpg; sourceTree = "<group>"; };
+		47CFBA8318B403BE00C21F4D /* Img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Img2.jpg; path = ../Img2.jpg; sourceTree = "<group>"; };
+		47CFBA8418B403BE00C21F4D /* Img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Img3.jpg; path = ../Img3.jpg; sourceTree = "<group>"; };
+		47CFBA8518B403BE00C21F4D /* Img4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Img4.jpg; path = ../Img4.jpg; sourceTree = "<group>"; };
+		47CFBA8A18B4053C00C21F4D /* EarthquakeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeCollectionCell.h; sourceTree = "<group>"; };
+		47CFBA8B18B4053C00C21F4D /* EarthquakeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeCollectionCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +164,12 @@
 		0F6337DE1866A59D00FB0BA0 /* Earthquake */ = {
 			isa = PBXGroup;
 			children = (
+				47CFBA8218B403BE00C21F4D /* Img1.jpg */,
+				47CFBA8318B403BE00C21F4D /* Img2.jpg */,
+				47CFBA8418B403BE00C21F4D /* Img3.jpg */,
+				47CFBA8518B403BE00C21F4D /* Img4.jpg */,
+				47CFBA7F18B4009900C21F4D /* EarthquakeCollectionViewController.h */,
+				47CFBA8018B4009900C21F4D /* EarthquakeCollectionViewController.m */,
 				472E053A18AABB4400A0EAA9 /* button1.png */,
 				472E053818AAB79100A0EAA9 /* slider2.png */,
 				472E053618AAB6F100A0EAA9 /* thumb2.png */,
@@ -159,6 +179,8 @@
 				0F6337E71866A59D00FB0BA0 /* EarthquakeAppDelegate.h */,
 				0F6337E81866A59D00FB0BA0 /* EarthquakeAppDelegate.m */,
 				0F6337EA1866A59D00FB0BA0 /* Main.storyboard */,
+				47CFBA8A18B4053C00C21F4D /* EarthquakeCollectionCell.h */,
+				47CFBA8B18B4053C00C21F4D /* EarthquakeCollectionCell.m */,
 				0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */,
 				0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */,
 				0F6337ED1866A59D00FB0BA0 /* EarthquakeViewController.h */,
@@ -302,16 +324,20 @@
 				472E052018A972A800A0EAA9 /* houseTest3.png in Resources */,
 				472E052618A972A800A0EAA9 /* houseTest9.png in Resources */,
 				472E051E18A972A800A0EAA9 /* houseTest1.png in Resources */,
+				47CFBA8818B403BE00C21F4D /* Img3.jpg in Resources */,
 				472E052318A972A800A0EAA9 /* houseTest6.png in Resources */,
 				472E052718A972A800A0EAA9 /* houseTest0.png in Resources */,
 				472E052518A972A800A0EAA9 /* houseTest8.png in Resources */,
 				0F6337F11866A59D00FB0BA0 /* Images.xcassets in Resources */,
+				47CFBA8918B403BE00C21F4D /* Img4.jpg in Resources */,
 				472E052918A9990700A0EAA9 /* iconTest.png in Resources */,
 				472E051F18A972A800A0EAA9 /* houseTest2.png in Resources */,
 				0F6337E31866A59D00FB0BA0 /* InfoPlist.strings in Resources */,
 				472E053B18AABB4400A0EAA9 /* button1.png in Resources */,
 				472E052218A972A800A0EAA9 /* houseTest5.png in Resources */,
 				472E052118A972A800A0EAA9 /* houseTest4.png in Resources */,
+				47CFBA8718B403BE00C21F4D /* Img2.jpg in Resources */,
+				47CFBA8618B403BE00C21F4D /* Img1.jpg in Resources */,
 				472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */,
 				0F6337EC1866A59D00FB0BA0 /* Main.storyboard in Resources */,
 			);
@@ -332,9 +358,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CFBA8C18B4053C00C21F4D /* EarthquakeCollectionCell.m in Sources */,
 				0F6337EF1866A59D00FB0BA0 /* EarthquakeViewController.m in Sources */,
 				0F6337E51866A59D00FB0BA0 /* main.m in Sources */,
 				0F6337E91866A59D00FB0BA0 /* EarthquakeAppDelegate.m in Sources */,
+				47CFBA8118B4009900C21F4D /* EarthquakeCollectionViewController.m in Sources */,
 				0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */,
 				0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */,
 			);
