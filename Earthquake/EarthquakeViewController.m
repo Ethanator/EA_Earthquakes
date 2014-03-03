@@ -11,7 +11,7 @@
 @interface EarthquakeViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *vidButton;
 @property (weak, nonatomic) IBOutlet UIButton *simButton;
-
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @end
 
 @implementation EarthquakeViewController
@@ -20,6 +20,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIImage *backgroundImg = [UIImage imageNamed:@"Design-Main_Page.png"];
+    self.backgroundImageView.image = backgroundImg;
+    [self.view sendSubviewToBack:self.backgroundImageView];
+    
     UIImage *bgImg = [UIImage imageNamed:@"button1.png"];
     UIEdgeInsets insets = UIEdgeInsetsMake(10, 10, 10, 10);
     UIImage *strImg = [bgImg resizableImageWithCapInsets:insets resizingMode:UIControlStateNormal];
