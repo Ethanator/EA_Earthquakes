@@ -21,9 +21,22 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    /* Editted by Ethan on 3/3/2014
+     * Lay out the background image on the main page.
+     * Note: May need to put the images in a folder.
+     */
     UIImage *backgroundImg = [UIImage imageNamed:@"Design-Main_Page.png"];
     self.backgroundImageView.image = backgroundImg;
     [self.view sendSubviewToBack:self.backgroundImageView];
+    
+    /* Editted by Ethan on 3/3/2014
+     * Lay out the background image on the main page.
+     * Note: May need to put the images in a folder.
+     * BEGIN */
+    
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.navigationBar.translucent = YES;
     
     UIImage *bgImg = [UIImage imageNamed:@"button1.png"];
     UIEdgeInsets insets = UIEdgeInsetsMake(10, 10, 10, 10);
