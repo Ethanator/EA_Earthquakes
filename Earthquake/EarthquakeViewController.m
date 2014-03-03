@@ -37,12 +37,6 @@
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
-    
-    UIImage *bgImg = [UIImage imageNamed:@"button1.png"];
-    UIEdgeInsets insets = UIEdgeInsetsMake(10, 10, 10, 10);
-    UIImage *strImg = [bgImg resizableImageWithCapInsets:insets resizingMode:UIControlStateNormal];
-    [self.simButton setBackgroundImage:strImg forState:UIControlStateNormal];
-    [self.vidButton setBackgroundImage:strImg forState:UIControlStateNormal];
 }
 
 - (void)didReceiveMemoryWarning
