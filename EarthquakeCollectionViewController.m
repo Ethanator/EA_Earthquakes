@@ -11,6 +11,7 @@
 
 @interface EarthquakeCollectionViewController ()
 
+@property (weak, nonatomic) UIImageView *backgroundImageView;
 
 @end
 
@@ -40,6 +41,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImage *backgroundImage = [UIImage imageNamed: @"images/Design-Main_Page-Background.png"];
+    [self.backgroundImageView setImage:backgroundImage];
     self.EQImages = [@[@"Img1.jpg",
                        @"Img2.jpg",
                        @"Img3.jpg",
