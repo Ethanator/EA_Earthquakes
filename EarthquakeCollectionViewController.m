@@ -38,9 +38,23 @@
     return self.EQImages.count;
 }
 
+/* Editted by Ethan on 3/3/2014
+ * Allow the navigation bar to pop up.
+ */
+
+- (void) viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+    [super viewWillAppear:animated];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.0f/255.0f green:192.0f/255.0f        blue:255.0f/255.0f alpha:1.0f];
+    self.navigationController.navigationBar.translucent = NO;
+    
     UIImage *backgroundImage = [UIImage imageNamed: @"images/Design-Main_Page-Background.png"];
     [self.backgroundImageView setImage:backgroundImage];
     self.EQImages = [@[@"Img1.jpg",
