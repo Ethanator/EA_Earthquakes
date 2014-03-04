@@ -68,6 +68,10 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="bpF-88-fYv">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EQCell" id="eJC-ge-eCa" customClass="EarthquakeCollectionCell">
                                 <rect key="frame" x="0.0" y="64" width="138" height="139"/>
@@ -95,6 +99,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="fjb-Tb-s0j"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="bpF-88-fYv" id="7uZ-MB-RUM"/>
                         <segue destination="CVI-D3-HCp" kind="push" id="3A1-Wk-8wc"/>
                     </connections>
                 </collectionViewController>

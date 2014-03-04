@@ -10,9 +10,7 @@
 #import "EarthquakeCollectionCell.h"
 
 @interface EarthquakeCollectionViewController ()
-
-@property (weak, nonatomic) UIImageView *backgroundImageView;
-
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 @end
 
 @implementation EarthquakeCollectionViewController
@@ -52,17 +50,25 @@
 {
     [super viewDidLoad];
     
+    /* Editted by Ethan on 3/3/2014
+     * Change the tint of the navigation bar.
+     * Change the background image of the page.
+     */
+    
+    UIImage *backgroundImg = [UIImage imageNamed:@"Design-Other_Pages.png"];
+    self.backgroundImageView.image = backgroundImg;
+    [self.view sendSubviewToBack:self.backgroundImageView];
+    
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.0f/255.0f green:192.0f/255.0f        blue:255.0f/255.0f alpha:1.0f];
     self.navigationController.navigationBar.translucent = NO;
     
-    UIImage *backgroundImage = [UIImage imageNamed: @"images/Design-Main_Page-Background.png"];
-    [self.backgroundImageView setImage:backgroundImage];
+    /*
     self.EQImages = [@[@"Img1.jpg",
                        @"Img2.jpg",
                        @"Img3.jpg",
                        @"Img4.jpg"] mutableCopy];
 	// Do any additional setup after loading the view.
-    [self.collectionView registerClass:[EarthquakeCollectionCell class] forCellWithReuseIdentifier:@"EQCell"];
+    [self.collectionView registerClass:[EarthquakeCollectionCell class] forCellWithReuseIdentifier:@"EQCell"];*/
 }
 
 -(EarthquakeCollectionCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
