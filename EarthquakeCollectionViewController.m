@@ -55,7 +55,7 @@
      * Change the background image of the page.
      */
     
-    UIImage *backgroundImg = [UIImage imageNamed:@"Design-Other_Pages.png"];
+    UIImage *backgroundImg = [UIImage imageNamed:@"Design-Other_Pages_Background.png"];
     self.backgroundImageView.image = backgroundImg;
     [self.view sendSubviewToBack:self.backgroundImageView];
     
