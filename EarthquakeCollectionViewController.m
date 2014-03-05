@@ -55,20 +55,24 @@
      * Change the background image of the page.
      */
     
-    UIImage *backgroundImg = [UIImage imageNamed:@"Design-Other_Pages_Background.png"];
+    UIImage *backgroundImg = [UIImage imageNamed:@"Design-Other_Pages-Background.png"];
     self.backgroundImageView.image = backgroundImg;
     [self.view sendSubviewToBack:self.backgroundImageView];
     
     self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0.0f/255.0f green:192.0f/255.0f        blue:255.0f/255.0f alpha:1.0f];
     self.navigationController.navigationBar.translucent = NO;
     
-    /*
-    self.EQImages = [@[@"Img1.jpg",
-                       @"Img2.jpg",
-                       @"Img3.jpg",
-                       @"Img4.jpg"] mutableCopy];
+    /* Editted by Ethan on 3/4/2014
+     * Reorganize the collection view cells.
+     */
+    UICollectionViewFlowLayout *flow = (UICollectionViewFlowLayout*) self.collectionViewLayout;
+    flow.sectionInset = UIEdgeInsetsMake(90.0f, 15.0f, 10.0f, 15.0f);
+    
+    self.EQImages = [@[@"Bridge-1.png",
+                       @"Hospital-1.png",
+                       @"House-1.png"] mutableCopy];
 	// Do any additional setup after loading the view.
-    [self.collectionView registerClass:[EarthquakeCollectionCell class] forCellWithReuseIdentifier:@"EQCell"];*/
+    [self.collectionView registerClass:[EarthquakeCollectionCell class] forCellWithReuseIdentifier:@"EQCell"];
 }
 
 -(EarthquakeCollectionCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath

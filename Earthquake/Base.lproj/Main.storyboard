@@ -20,7 +20,7 @@
                                 <rect key="frame" x="75" y="233" width="170" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
-                                <state key="normal" title="SiMuLaToR" backgroundImage="Design-Button_Background.png">
+                                <state key="normal" title="SiMuLaToR" backgroundImage="Design-Button.png">
                                     <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -31,7 +31,7 @@
                                 <rect key="frame" x="75" y="335" width="170" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="29"/>
-                                <state key="normal" title="ViDeO" backgroundImage="Design-Button_Background.png">
+                                <state key="normal" title="ViDeO" backgroundImage="Design-Button.png">
                                     <color key="titleColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -212,7 +212,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Design-Button_Background.png" width="926" height="295"/>
+        <image name="Design-Button.png" width="926" height="295"/>
         <image name="button1.png" width="48" height="26"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
