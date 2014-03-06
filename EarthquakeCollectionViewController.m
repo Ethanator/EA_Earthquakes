@@ -7,6 +7,7 @@
 //
 
 #import "EarthquakeCollectionViewController.h"
+#import "EarthquakeShakeTableViewController.h"
 #import "EarthquakeCollectionCell.h"
 
 @interface EarthquakeCollectionViewController ()
@@ -89,6 +90,10 @@
     return eqCell;
 }
 
+/* Editted by Ethan on 3/4/2014
+ * Added segue to the collection view controller.
+ */
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -99,12 +104,17 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item
-    
+    [self performSegueWithIdentifier:@"structure" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"structure"]) {
+        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:@"House"];
+    }
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
     // TODO: Deselect item
 }
-
-
 
 @end

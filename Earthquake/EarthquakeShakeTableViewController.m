@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *buildingImage;
 @property (weak, nonatomic) IBOutlet UIButton *shakeButton;
 @property (weak, nonatomic) IBOutlet UIButton *replayButton;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 @end
 
@@ -39,6 +40,17 @@
     _slideLabel.text = [NSString stringWithFormat:@"%0.1f", _slider.value];
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    
+    /* Editted by Ethan on 3/6/2014
+     * Change the tint of the navigation bar.
+     * Change the background image of the page.
+     */
+    
+    UIImage *backgroundImg = [UIImage imageNamed:@"Design-Other_Pages-Background-No_Text.png"];
+    self.backgroundImageView.image = backgroundImg;
+    [self.view sendSubviewToBack:self.backgroundImageView];
+    
     
     [_slider addTarget:self action:@selector(sliderChanged:) forControlEvents:UIControlEventValueChanged];
     

@@ -100,7 +100,7 @@
                     <navigationItem key="navigationItem" id="fjb-Tb-s0j"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="bpF-88-fYv" id="7uZ-MB-RUM"/>
-                        <segue destination="CVI-D3-HCp" kind="push" id="3A1-Wk-8wc"/>
+                        <segue destination="CVI-D3-HCp" kind="push" identifier="structure" id="3A1-Wk-8wc"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="970-Vm-1f3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,14 +140,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="okU-sL-j5l">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="505"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="10" id="rfV-fd-oiB">
                                 <rect key="frame" x="-102" y="242" width="250" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="ZuZ-PR-c0U">
-                                <rect key="frame" x="125" y="429" width="71" height="43"/>
+                                <rect key="frame" x="208" y="393" width="92" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="button1.png">
+                                <state key="normal" backgroundImage="Design-Button.png">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Shake!">
                                             <attributes>
@@ -165,7 +169,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1bf-zL-XTq">
-                                <rect key="frame" x="47" y="139" width="227" height="215"/>
+                                <rect key="frame" x="73" y="117" width="227" height="215"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="XvF-sN-obv">
@@ -181,6 +185,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="kSv-iJ-fZ7"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="okU-sL-j5l" id="WsU-qq-3Fn"/>
                         <outlet property="buildingImage" destination="1bf-zL-XTq" id="5Tf-Uf-9gs"/>
                         <outlet property="replayButton" destination="XvF-sN-obv" id="dao-SL-XEJ"/>
                         <outlet property="shakeButton" destination="ZuZ-PR-c0U" id="iXg-WD-rw8"/>
@@ -213,7 +218,6 @@
     </scenes>
     <resources>
         <image name="Design-Button.png" width="926" height="295"/>
-        <image name="button1.png" width="48" height="26"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

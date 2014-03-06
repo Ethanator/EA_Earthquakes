@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface EarthquakeShakeTableViewController : UIViewController
-
+@property(strong, nonatomic) NSString *buildingType;
 @end
 
