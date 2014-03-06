@@ -60,6 +60,8 @@
 		0F8891BD18C9291400B2B4A4 /* Design-Slider_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8891BC18C9291400B2B4A4 /* Design-Slider_Button.png */; };
 		0F8891C018C92C2000B2B4A4 /* Design-Other_Pages_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8891BE18C92C2000B2B4A4 /* Design-Other_Pages_Background.png */; };
 		0F8891C118C92C2000B2B4A4 /* Design-Other_Pages.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8891BF18C92C2000B2B4A4 /* Design-Other_Pages.png */; };
+		0FCDEC2618C93C1700813FA9 /* Design-Slider_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCDEC2518C93C1700813FA9 /* Design-Slider_Bar.png */; };
+		0FCDEC2818C93C1A00813FA9 /* Design-Slider_Thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCDEC2718C93C1A00813FA9 /* Design-Slider_Thumb.png */; };
 		0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */; };
 		0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */; };
 		472E051E18A972A800A0EAA9 /* houseTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051418A972A700A0EAA9 /* houseTest1.png */; };
@@ -153,6 +155,8 @@
 		0F8891BC18C9291400B2B4A4 /* Design-Slider_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Slider_Button.png"; sourceTree = "<group>"; };
 		0F8891BE18C92C2000B2B4A4 /* Design-Other_Pages_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Other_Pages_Background.png"; sourceTree = "<group>"; };
 		0F8891BF18C92C2000B2B4A4 /* Design-Other_Pages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Other_Pages.png"; sourceTree = "<group>"; };
+		0FCDEC2518C93C1700813FA9 /* Design-Slider_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Slider_Bar.png"; sourceTree = "<group>"; };
+		0FCDEC2718C93C1A00813FA9 /* Design-Slider_Thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Slider_Thumb.png"; sourceTree = "<group>"; };
 		0FD5899718A1B4720098761F /* EarthquakeVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeVideoViewController.h; sourceTree = SOURCE_ROOT; };
 		0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeVideoViewController.m; sourceTree = SOURCE_ROOT; };
 		0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeShakeTableViewController.h; sourceTree = "<group>"; };
@@ -296,6 +300,8 @@
 			isa = PBXGroup;
 			children = (
 				0F8177EE18C6BDF3009ADC5A /* Design-Button.png */,
+				0FCDEC2718C93C1A00813FA9 /* Design-Slider_Thumb.png */,
+				0FCDEC2518C93C1700813FA9 /* Design-Slider_Bar.png */,
 				0F8891BA18C9290500B2B4A4 /* Design-Slider.png */,
 				0F8891BC18C9291400B2B4A4 /* Design-Slider_Button.png */,
 				0F8891BE18C92C2000B2B4A4 /* Design-Other_Pages_Background.png */,
@@ -539,6 +545,7 @@
 				0F81789518C6C7FF009ADC5A /* House-6.png in Resources */,
 				0F81788D18C6C7FF009ADC5A /* Hospital-8.png in Resources */,
 				47CFBA8718B403BE00C21F4D /* Img2.jpg in Resources */,
+				0FCDEC2618C93C1700813FA9 /* Design-Slider_Bar.png in Resources */,
 				47CFBA8618B403BE00C21F4D /* Img1.jpg in Resources */,
 				472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */,
 				0F81788E18C6C7FF009ADC5A /* Hospital-9.png in Resources */,
@@ -548,6 +555,7 @@
 				0F81788318C6C7FF009ADC5A /* Bridge-8.png in Resources */,
 				0F81789218C6C7FF009ADC5A /* House-3.png in Resources */,
 				0F8891C118C92C2000B2B4A4 /* Design-Other_Pages.png in Resources */,
+				0FCDEC2818C93C1A00813FA9 /* Design-Slider_Thumb.png in Resources */,
 				0F81789118C6C7FF009ADC5A /* House-2.png in Resources */,
 				0F81780618C6BDF3009ADC5A /* houseTest2.png in Resources */,
 				0F6337EC1866A59D00FB0BA0 /* Main.storyboard in Resources */,
