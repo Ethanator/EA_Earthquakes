@@ -98,6 +98,7 @@
 - (IBAction)shakePressed:(id)sender
 {
     int intIntensity = (int) self.slider.value;
+    if (intIntensity < 1) intIntensity = 1.1;
     NSString *nextImgNum = [NSString stringWithFormat:@"%d",intIntensity];
     
     NSString *nextImgName = [NSString stringWithFormat:@"%@%@.png", self.buildingType, nextImgNum];
