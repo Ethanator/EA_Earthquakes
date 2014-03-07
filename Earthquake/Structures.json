@@ -1,0 +1,13 @@
+[
+	{	"type": "House",
+		"imgBase": "House-", 
+		"imgExt": ".png"} ,
+
+	{	"type": "Hospital",
+		"imgBase": "Hospital-", 
+		"imgExt": ".png"} ,
+
+	{	"type": "Bridge",
+		"imgBase": "Bridge-", 
+		"imgExt": ".png"} ,
+]

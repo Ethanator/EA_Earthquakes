@@ -166,7 +166,7 @@
 		0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeVideoViewController.m; sourceTree = SOURCE_ROOT; };
 		0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeShakeTableViewController.h; sourceTree = "<group>"; };
 		0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeShakeTableViewController.m; sourceTree = "<group>"; };
-		471847D218C982F7000AEB76 /* Structures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Structures.json; path = ../Structures.json; sourceTree = "<group>"; };
+		471847D218C982F7000AEB76 /* Structures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Structures.json; sourceTree = "<group>"; };
 		472E051418A972A700A0EAA9 /* houseTest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest1.png; path = ../houseTest1.png; sourceTree = "<group>"; };
 		472E051518A972A700A0EAA9 /* houseTest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest2.png; path = ../houseTest2.png; sourceTree = "<group>"; };
 		472E051618A972A700A0EAA9 /* houseTest3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest3.png; path = ../houseTest3.png; sourceTree = "<group>"; };
@@ -250,7 +250,7 @@
 		0F6337DE1866A59D00FB0BA0 /* Earthquake */ = {
 			isa = PBXGroup;
 			children = (
-				4760A7B018C96A2300C94AFB /* Data */,
+				471847D418C985AD000AEB76 /* Data */,
 				0F81789A18C6CBE1009ADC5A /* Images */,
 				0F81785B18C6C7FF009ADC5A /* Buildings */,
 				0F8177E818C6BDF3009ADC5A /* Base.lproj */,
@@ -431,12 +431,12 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
-		4760A7B018C96A2300C94AFB /* Data */ = {
+		471847D418C985AD000AEB76 /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				471847D218C982F7000AEB76 /* Structures.json */,
 			);
-			path = Data;
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
