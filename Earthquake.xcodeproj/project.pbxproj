@@ -66,6 +66,7 @@
 		0FCDEC2F18C9470400813FA9 /* Design-Back_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCDEC2E18C9470400813FA9 /* Design-Back_Button.png */; };
 		0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */; };
 		0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */; };
+		471847D318C982F7000AEB76 /* Structures.json in Resources */ = {isa = PBXBuildFile; fileRef = 471847D218C982F7000AEB76 /* Structures.json */; };
 		472E051E18A972A800A0EAA9 /* houseTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051418A972A700A0EAA9 /* houseTest1.png */; };
 		472E051F18A972A800A0EAA9 /* houseTest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051518A972A700A0EAA9 /* houseTest2.png */; };
 		472E052018A972A800A0EAA9 /* houseTest3.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051618A972A700A0EAA9 /* houseTest3.png */; };
@@ -80,7 +81,6 @@
 		472E052B18AA047300A0EAA9 /* smIconTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E052A18AA047300A0EAA9 /* smIconTest.png */; };
 		472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053618AAB6F100A0EAA9 /* thumb2.png */; };
 		472E053B18AABB4400A0EAA9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053A18AABB4400A0EAA9 /* button1.png */; };
-		4760A7B218C96A2300C94AFB /* Structures.json in Resources */ = {isa = PBXBuildFile; fileRef = 4760A7B118C96A2300C94AFB /* Structures.json */; };
 		47CFBA8118B4009900C21F4D /* EarthquakeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFBA8018B4009900C21F4D /* EarthquakeCollectionViewController.m */; };
 		47CFBA8618B403BE00C21F4D /* Img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CFBA8218B403BE00C21F4D /* Img1.jpg */; };
 		47CFBA8718B403BE00C21F4D /* Img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CFBA8318B403BE00C21F4D /* Img2.jpg */; };
@@ -166,6 +166,7 @@
 		0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeVideoViewController.m; sourceTree = SOURCE_ROOT; };
 		0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeShakeTableViewController.h; sourceTree = "<group>"; };
 		0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeShakeTableViewController.m; sourceTree = "<group>"; };
+		471847D218C982F7000AEB76 /* Structures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Structures.json; path = ../Structures.json; sourceTree = "<group>"; };
 		472E051418A972A700A0EAA9 /* houseTest1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest1.png; path = ../houseTest1.png; sourceTree = "<group>"; };
 		472E051518A972A700A0EAA9 /* houseTest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest2.png; path = ../houseTest2.png; sourceTree = "<group>"; };
 		472E051618A972A700A0EAA9 /* houseTest3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = houseTest3.png; path = ../houseTest3.png; sourceTree = "<group>"; };
@@ -180,7 +181,6 @@
 		472E052A18AA047300A0EAA9 /* smIconTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smIconTest.png; path = ../smIconTest.png; sourceTree = "<group>"; };
 		472E053618AAB6F100A0EAA9 /* thumb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb2.png; sourceTree = "<group>"; };
 		472E053A18AABB4400A0EAA9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
-		4760A7B118C96A2300C94AFB /* Structures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Structures.json; sourceTree = "<group>"; };
 		47CFBA7F18B4009900C21F4D /* EarthquakeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeCollectionViewController.h; sourceTree = SOURCE_ROOT; };
 		47CFBA8018B4009900C21F4D /* EarthquakeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeCollectionViewController.m; sourceTree = SOURCE_ROOT; };
 		47CFBA8218B403BE00C21F4D /* Img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Img1.jpg; path = ../Img1.jpg; sourceTree = "<group>"; };
@@ -434,7 +434,7 @@
 		4760A7B018C96A2300C94AFB /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				4760A7B118C96A2300C94AFB /* Structures.json */,
+				471847D218C982F7000AEB76 /* Structures.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -555,6 +555,7 @@
 				0F81789618C6C7FF009ADC5A /* House-7.png in Resources */,
 				472E052218A972A800A0EAA9 /* houseTest5.png in Resources */,
 				0F81780518C6BDF3009ADC5A /* houseTest1.png in Resources */,
+				471847D318C982F7000AEB76 /* Structures.json in Resources */,
 				0F81789818C6C7FF009ADC5A /* House-9.png in Resources */,
 				0F81787D18C6C7FF009ADC5A /* Bridge-2.png in Resources */,
 				0F65E6B818C91B8D00D19C2D /* Design-Other_Pages-Background-No_Text.png in Resources */,
@@ -575,7 +576,6 @@
 				0F81789218C6C7FF009ADC5A /* House-3.png in Resources */,
 				0F8891C118C92C2000B2B4A4 /* Design-Other_Pages.png in Resources */,
 				0FCDEC2818C93C1A00813FA9 /* Design-Slider_Thumb.png in Resources */,
-				4760A7B218C96A2300C94AFB /* Structures.json in Resources */,
 				0F81789118C6C7FF009ADC5A /* House-2.png in Resources */,
 				0F81780618C6BDF3009ADC5A /* houseTest2.png in Resources */,
 				0F6337EC1866A59D00FB0BA0 /* Main.storyboard in Resources */,
