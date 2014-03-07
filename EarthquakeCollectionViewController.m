@@ -110,7 +110,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"structure"]) {
-        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:@"House"];
+        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:@"House-"];
     }
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {

@@ -57,13 +57,14 @@
     [self.shakeButton addTarget:self action:@selector(shakePressed:) forControlEvents:UIControlEventTouchDown];
     [self.replayButton addTarget:self action:@selector(replayPressed:) forControlEvents:UIControlEventTouchDown];
     
-    [self.slider setMinimumTrackImage:[[UIImage imageNamed:@"slider.png"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal ];
-    [self.slider setMaximumTrackImage:[[UIImage imageNamed:@"slider.png"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal ];
-    [self.slider setThumbImage:[UIImage imageNamed:@"slider2.png"] forState:UIControlStateNormal];
+    [self.slider setMinimumTrackImage:[[UIImage imageNamed:@"Design-Slider_Bar.png"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal ];
+    [self.slider setMaximumTrackImage:[[UIImage imageNamed:@"Design-Slider_Bar.png"] stretchableImageWithLeftCapWidth:10.0 topCapHeight:0.0] forState:UIControlStateNormal ];
+    [self.slider setThumbImage:[UIImage imageNamed:@"Design-Slider_Thumb.png"] forState:UIControlStateNormal];
     
     //debugging
     NSAssert(self.buildingImage, @"self.imageView is nil. Check your IBOutlet connections");
-    UIImage* firstImage = [UIImage imageNamed:@"houseTest1.png"];
+    NSString *firstImgName = [NSString stringWithFormat:@"%@1.png", self.buildingType];
+    UIImage* firstImage = [UIImage imageNamed:firstImgName];
     NSAssert(firstImage, @"firstImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
     
     _slider.maximumValue = 9.9;
@@ -83,7 +84,8 @@
 
 - (void)replayPressed:(id)sender
 {
-    UIImage* nextImage = [UIImage imageNamed:@"houseTest0.png"];
+    NSString *nextImgName = [NSString stringWithFormat:@"%@1.png", self.buildingType];
+    UIImage* nextImage = [UIImage imageNamed:nextImgName];
     NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
     self.buildingImage.image = nextImage;
     
@@ -98,7 +100,7 @@
     int intIntensity = (int) self.slider.value;
     NSString *nextImgNum = [NSString stringWithFormat:@"%d",intIntensity];
     
-    NSString *nextImgName = [NSString stringWithFormat:@"houseTest%@.png", nextImgNum];
+    NSString *nextImgName = [NSString stringWithFormat:@"%@%@.png", self.buildingType, nextImgNum];
 
     UIImage* nextImage = [UIImage imageNamed:nextImgName];
     NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
