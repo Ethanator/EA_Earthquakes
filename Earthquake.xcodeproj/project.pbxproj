@@ -14,7 +14,6 @@
 		0F6337E51866A59D00FB0BA0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6337E41866A59D00FB0BA0 /* main.m */; };
 		0F6337E91866A59D00FB0BA0 /* EarthquakeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6337E81866A59D00FB0BA0 /* EarthquakeAppDelegate.m */; };
 		0F6337EC1866A59D00FB0BA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F6337EA1866A59D00FB0BA0 /* Main.storyboard */; };
-		0F6337EF1866A59D00FB0BA0 /* EarthquakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6337EE1866A59D00FB0BA0 /* EarthquakeViewController.m */; };
 		0F6337F81866A59D00FB0BA0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6337F71866A59D00FB0BA0 /* XCTest.framework */; };
 		0F6337F91866A59D00FB0BA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6337D81866A59D00FB0BA0 /* Foundation.framework */; };
 		0F6337FA1866A59D00FB0BA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6337DC1866A59D00FB0BA0 /* UIKit.framework */; };
@@ -62,6 +61,9 @@
 		0F8891C118C92C2000B2B4A4 /* Design-Other_Pages.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F8891BF18C92C2000B2B4A4 /* Design-Other_Pages.png */; };
 		0FCDEC2618C93C1700813FA9 /* Design-Slider_Bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCDEC2518C93C1700813FA9 /* Design-Slider_Bar.png */; };
 		0FCDEC2818C93C1A00813FA9 /* Design-Slider_Thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCDEC2718C93C1A00813FA9 /* Design-Slider_Thumb.png */; };
+		0FCDEC2A18C93E9C00813FA9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FCDEC2918C93E9C00813FA9 /* MediaPlayer.framework */; };
+		0FCDEC2D18C942E000813FA9 /* EarthquakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FCDEC2C18C942E000813FA9 /* EarthquakeViewController.m */; };
+		0FCDEC2F18C9470400813FA9 /* Design-Back_Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCDEC2E18C9470400813FA9 /* Design-Back_Button.png */; };
 		0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */; };
 		0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */; };
 		472E051E18A972A800A0EAA9 /* houseTest1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E051418A972A700A0EAA9 /* houseTest1.png */; };
@@ -108,8 +110,6 @@
 		0F6337E71866A59D00FB0BA0 /* EarthquakeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarthquakeAppDelegate.h; sourceTree = "<group>"; };
 		0F6337E81866A59D00FB0BA0 /* EarthquakeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarthquakeAppDelegate.m; sourceTree = "<group>"; };
 		0F6337EB1866A59D00FB0BA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0F6337ED1866A59D00FB0BA0 /* EarthquakeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EarthquakeViewController.h; sourceTree = "<group>"; };
-		0F6337EE1866A59D00FB0BA0 /* EarthquakeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EarthquakeViewController.m; sourceTree = "<group>"; };
 		0F6337F61866A59D00FB0BA0 /* EarthquakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F6337F71866A59D00FB0BA0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		0F6337FF1866A59D00FB0BA0 /* EarthquakeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EarthquakeTests-Info.plist"; sourceTree = "<group>"; };
@@ -157,6 +157,10 @@
 		0F8891BF18C92C2000B2B4A4 /* Design-Other_Pages.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Other_Pages.png"; sourceTree = "<group>"; };
 		0FCDEC2518C93C1700813FA9 /* Design-Slider_Bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Slider_Bar.png"; sourceTree = "<group>"; };
 		0FCDEC2718C93C1A00813FA9 /* Design-Slider_Thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Slider_Thumb.png"; sourceTree = "<group>"; };
+		0FCDEC2918C93E9C00813FA9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0FCDEC2B18C942E000813FA9 /* EarthquakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeViewController.h; sourceTree = "<group>"; };
+		0FCDEC2C18C942E000813FA9 /* EarthquakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeViewController.m; sourceTree = "<group>"; };
+		0FCDEC2E18C9470400813FA9 /* Design-Back_Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Design-Back_Button.png"; sourceTree = "<group>"; };
 		0FD5899718A1B4720098761F /* EarthquakeVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeVideoViewController.h; sourceTree = SOURCE_ROOT; };
 		0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeVideoViewController.m; sourceTree = SOURCE_ROOT; };
 		0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeShakeTableViewController.h; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FCDEC2A18C93E9C00813FA9 /* MediaPlayer.framework in Frameworks */,
 				0F6337DB1866A59D00FB0BA0 /* CoreGraphics.framework in Frameworks */,
 				0F6337DD1866A59D00FB0BA0 /* UIKit.framework in Frameworks */,
 				0F6337D91866A59D00FB0BA0 /* Foundation.framework in Frameworks */,
@@ -231,6 +236,7 @@
 		0F6337D71866A59D00FB0BA0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FCDEC2918C93E9C00813FA9 /* MediaPlayer.framework */,
 				0F6337D81866A59D00FB0BA0 /* Foundation.framework */,
 				0F6337DA1866A59D00FB0BA0 /* CoreGraphics.framework */,
 				0F6337DC1866A59D00FB0BA0 /* UIKit.framework */,
@@ -254,13 +260,13 @@
 				0FD5899818A1B4720098761F /* EarthquakeVideoViewController.m */,
 				0F6337E71866A59D00FB0BA0 /* EarthquakeAppDelegate.h */,
 				0F6337E81866A59D00FB0BA0 /* EarthquakeAppDelegate.m */,
+				0FCDEC2B18C942E000813FA9 /* EarthquakeViewController.h */,
+				0FCDEC2C18C942E000813FA9 /* EarthquakeViewController.m */,
 				0F6337EA1866A59D00FB0BA0 /* Main.storyboard */,
 				47CFBA8A18B4053C00C21F4D /* EarthquakeCollectionCell.h */,
 				47CFBA8B18B4053C00C21F4D /* EarthquakeCollectionCell.m */,
 				0FD5899A18A1B96A0098761F /* EarthquakeShakeTableViewController.h */,
 				0FD5899B18A1B96A0098761F /* EarthquakeShakeTableViewController.m */,
-				0F6337ED1866A59D00FB0BA0 /* EarthquakeViewController.h */,
-				0F6337EE1866A59D00FB0BA0 /* EarthquakeViewController.m */,
 				0F6337DF1866A59D00FB0BA0 /* Supporting Files */,
 			);
 			path = Earthquake;
@@ -300,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				0F8177EE18C6BDF3009ADC5A /* Design-Button.png */,
+				0FCDEC2E18C9470400813FA9 /* Design-Back_Button.png */,
 				0FCDEC2718C93C1A00813FA9 /* Design-Slider_Thumb.png */,
 				0FCDEC2518C93C1700813FA9 /* Design-Slider_Bar.png */,
 				0F8891BA18C9290500B2B4A4 /* Design-Slider.png */,
@@ -549,6 +556,7 @@
 				47CFBA8618B403BE00C21F4D /* Img1.jpg in Resources */,
 				472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */,
 				0F81788E18C6C7FF009ADC5A /* Hospital-9.png in Resources */,
+				0FCDEC2F18C9470400813FA9 /* Design-Back_Button.png in Resources */,
 				0F81788118C6C7FF009ADC5A /* Bridge-6.png in Resources */,
 				0F81780B18C6BE12009ADC5A /* Design-Other_Pages-Background.png in Resources */,
 				0F81787E18C6C7FF009ADC5A /* Bridge-3.png in Resources */,
@@ -579,9 +587,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				47CFBA8C18B4053C00C21F4D /* EarthquakeCollectionCell.m in Sources */,
-				0F6337EF1866A59D00FB0BA0 /* EarthquakeViewController.m in Sources */,
 				0F6337E51866A59D00FB0BA0 /* main.m in Sources */,
 				0F6337E91866A59D00FB0BA0 /* EarthquakeAppDelegate.m in Sources */,
+				0FCDEC2D18C942E000813FA9 /* EarthquakeViewController.m in Sources */,
 				47CFBA8118B4009900C21F4D /* EarthquakeCollectionViewController.m in Sources */,
 				0FD5899C18A1B96A0098761F /* EarthquakeShakeTableViewController.m in Sources */,
 				0FD5899918A1B4720098761F /* EarthquakeVideoViewController.m in Sources */,

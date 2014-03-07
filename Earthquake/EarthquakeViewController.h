@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface EarthquakeViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIView *videoButton;
-
+@property (nonatomic, strong) MPMoviePlayerController *moviePlayer;
+- (IBAction)playVideo:(id)sender;
 @end

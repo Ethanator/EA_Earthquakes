@@ -9,12 +9,15 @@
 #import "EarthquakeViewController.h"
 
 @interface EarthquakeViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *vidButton;
 @property (weak, nonatomic) IBOutlet UIButton *simButton;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UIWebView *videoView;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
+- (IBAction)backToMainPage:(id)sender;
 @end
 
 @implementation EarthquakeViewController
+@synthesize moviePlayer;
 
 - (void) viewWillAppear:(BOOL)animated
 {
@@ -49,5 +52,23 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+/* Editted by Ethan on 3/6/2014
+ * Allow the video to be played.
+ */
+- (IBAction)playVideo:(id)sender {
+    self.videoView.hidden = NO;
+    self.backButton.hidden = NO;
+    NSString *stream = @"http://www.youtube.com/watch?v=FhUFLJ6tD9k";
+    NSURL *url = [NSURL URLWithString:stream];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [self.videoView loadRequest:request];
+}
+
+
+- (IBAction)backToMainPage:(id)sender {
+    self.videoView.hidden = YES;
+    self.backButton.hidden = YES;
 }
 @end
