@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *shakeButton;
 @property (weak, nonatomic) IBOutlet UIButton *replayButton;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (weak, nonatomic) IBOutlet UILabel *afterPicText;
+@property (weak, nonatomic) IBOutlet UILabel *richterScale;
 
 @end
 
@@ -80,6 +82,9 @@
 
 - (void)replayPressed:(id)sender
 {
+    self.afterPicText.backgroundColor = [UIColor clearColor];
+    self.afterPicText.text = @"";
+    
     NSString *nextImgName = [NSString stringWithFormat:@"%@1.png", self.buildingType];
     UIImage* nextImage = [UIImage imageNamed:nextImgName];
     NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
@@ -98,6 +103,45 @@
     NSString *nextImgNum = [NSString stringWithFormat:@"%d",intIntensity];
     
     NSString *nextImgName = [NSString stringWithFormat:@"%@%@.png", self.buildingType, nextImgNum];
+    
+    /* Editted by Ethan on 3/6/2014
+     * Get the level of the earthquake and display explanations.
+     */
+    NSCharacterSet *delimiters = [NSCharacterSet characterSetWithCharactersInString:@"-."];
+    NSInteger richter = [[nextImgName componentsSeparatedByCharactersInSet:delimiters][1] integerValue];
+    self.afterPicText.backgroundColor = [UIColor yellowColor];
+    self.afterPicText.text = [NSString stringWithFormat:@"%@\n\n", self.richterScale.text];
+    switch (richter) {
+        case 1:
+            self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"Nothing felt, but detected by instruments."];
+            break;
+        case 2:
+            self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"Felt by very few people."];
+            break;
+        case 3:
+                self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"Felt by many, often mistaken for a passing vehicle."];
+            break;
+        case 4:
+            self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"Felt by many indoors, dishes and doors disturbed."];
+            break;
+        case 5:
+            self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"Felt by nearly everyone. People awakened. Cracked walls, trees disturbed."];
+            break;
+        case 6:
+            self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"Felt by all. Many run outdoors. Furniture moves. Slight damage occurs."];
+            break;
+        case 7:
+            self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"Poorly built buildings suffer severe damage. Slight damage every where else."];
+            break;
+        case 8:
+            self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"Everyone runs outdoors. Moderate to major damage. Minor damage to specially designed buildings. Chimneys and walls collapse."];
+            break;
+        case 9:
+            self.afterPicText.text = [NSString stringWithFormat:@"%@%@", self.afterPicText.text, @"All buildings suffer major damage. Ground cracks, pipes break, foundations shift."];
+            break;
+        default:
+            break;
+    }
 
     UIImage* nextImage = [UIImage imageNamed:nextImgName];
     NSAssert(nextImage, @"nextImage is nil. Check that you added the image to your bundle and that the filename above matches the name of you image.");
