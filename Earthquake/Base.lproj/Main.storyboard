@@ -36,7 +36,22 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="J9f-Wk-sr0" kind="push" id="mX1-Zm-USh"/>
+                                    <action selector="playVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bhs-Mf-T8R"/>
+                                </connections>
+                            </button>
+                            <webView hidden="YES" opaque="NO" contentMode="scaleToFill" id="YhF-Rl-cjK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Aoy-jd-ldG">
+                                <rect key="frame" x="220" y="518" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Design-Back_Button.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backToMainPage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="XSE-uO-iUm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -44,11 +59,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="uwI-mj-6Kf"/>
                     <connections>
+                        <outlet property="backButton" destination="Aoy-jd-ldG" id="JTi-J1-g0B"/>
                         <outlet property="backgroundImageView" destination="3bt-7M-8Fz" id="yP4-Ka-cnm"/>
                         <outlet property="simButton" destination="ykq-Zt-WOV" id="ct0-rr-vMP"/>
-                        <outlet property="vidButton" destination="BLo-ib-dbf" id="5SZ-7V-ZKp"/>
-                        <outlet property="video" destination="uF8-zu-UiM" id="IwZ-9f-fUN"/>
-                        <outlet property="videoButton" destination="kh9-bI-dsS" id="4g2-Ng-B1n"/>
+                        <outlet property="videoView" destination="YhF-Rl-cjK" id="tB8-5w-2Rx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -106,31 +120,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="970-Vm-1f3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="958" y="597"/>
-        </scene>
-        <!--Earthquake Video View Controller-->
-        <scene sceneID="l4E-1b-5sa">
-            <objects>
-                <viewController id="J9f-Wk-sr0" customClass="EarthquakeVideoViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QPK-uB-jST">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" id="uF8-zu-UiM">
-                                <rect key="frame" x="6" y="83" width="327" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="VVa-01-a5l"/>
-                    <connections>
-                        <outlet property="video" destination="uF8-zu-UiM" id="mkU-q8-YTT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ySt-4X-wkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="967" y="-82"/>
         </scene>
         <!--Earthquake Shake Table View Controller-->
         <scene sceneID="AGW-Nz-GaQ">
@@ -217,6 +206,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Design-Back_Button.png" width="108" height="43"/>
         <image name="Design-Button.png" width="926" height="295"/>
     </resources>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
