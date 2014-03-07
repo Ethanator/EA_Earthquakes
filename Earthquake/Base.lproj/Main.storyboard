@@ -165,7 +165,7 @@
                                 <rect key="frame" x="253" y="72" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" title="Replay">
+                                <state key="normal" title="Replay" backgroundImage="Design-Button.png">
                                     <color key="titleColor" red="0.99250594430000005" green="0.1480929966" blue="0.13748875269999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
