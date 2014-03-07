@@ -80,6 +80,7 @@
 		472E052B18AA047300A0EAA9 /* smIconTest.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E052A18AA047300A0EAA9 /* smIconTest.png */; };
 		472E053718AAB6F100A0EAA9 /* thumb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053618AAB6F100A0EAA9 /* thumb2.png */; };
 		472E053B18AABB4400A0EAA9 /* button1.png in Resources */ = {isa = PBXBuildFile; fileRef = 472E053A18AABB4400A0EAA9 /* button1.png */; };
+		4760A7B218C96A2300C94AFB /* Structures.json in Resources */ = {isa = PBXBuildFile; fileRef = 4760A7B118C96A2300C94AFB /* Structures.json */; };
 		47CFBA8118B4009900C21F4D /* EarthquakeCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47CFBA8018B4009900C21F4D /* EarthquakeCollectionViewController.m */; };
 		47CFBA8618B403BE00C21F4D /* Img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CFBA8218B403BE00C21F4D /* Img1.jpg */; };
 		47CFBA8718B403BE00C21F4D /* Img2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 47CFBA8318B403BE00C21F4D /* Img2.jpg */; };
@@ -179,6 +180,7 @@
 		472E052A18AA047300A0EAA9 /* smIconTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smIconTest.png; path = ../smIconTest.png; sourceTree = "<group>"; };
 		472E053618AAB6F100A0EAA9 /* thumb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumb2.png; sourceTree = "<group>"; };
 		472E053A18AABB4400A0EAA9 /* button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button1.png; sourceTree = "<group>"; };
+		4760A7B118C96A2300C94AFB /* Structures.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Structures.json; sourceTree = "<group>"; };
 		47CFBA7F18B4009900C21F4D /* EarthquakeCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeCollectionViewController.h; sourceTree = SOURCE_ROOT; };
 		47CFBA8018B4009900C21F4D /* EarthquakeCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeCollectionViewController.m; sourceTree = SOURCE_ROOT; };
 		47CFBA8218B403BE00C21F4D /* Img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Img1.jpg; path = ../Img1.jpg; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		0F6337DE1866A59D00FB0BA0 /* Earthquake */ = {
 			isa = PBXGroup;
 			children = (
+				4760A7B018C96A2300C94AFB /* Data */,
 				0F81789A18C6CBE1009ADC5A /* Images */,
 				0F81785B18C6C7FF009ADC5A /* Buildings */,
 				0F8177E818C6BDF3009ADC5A /* Base.lproj */,
@@ -428,6 +431,14 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
+		4760A7B018C96A2300C94AFB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4760A7B118C96A2300C94AFB /* Structures.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -564,6 +575,7 @@
 				0F81789218C6C7FF009ADC5A /* House-3.png in Resources */,
 				0F8891C118C92C2000B2B4A4 /* Design-Other_Pages.png in Resources */,
 				0FCDEC2818C93C1A00813FA9 /* Design-Slider_Thumb.png in Resources */,
+				4760A7B218C96A2300C94AFB /* Structures.json in Resources */,
 				0F81789118C6C7FF009ADC5A /* House-2.png in Resources */,
 				0F81780618C6BDF3009ADC5A /* houseTest2.png in Resources */,
 				0F6337EC1866A59D00FB0BA0 /* Main.storyboard in Resources */,

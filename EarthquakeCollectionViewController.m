@@ -12,6 +12,8 @@
 
 @interface EarthquakeCollectionViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+@property (nonatomic, strong) NSArray* StructArray;
+@property (nonatomic, strong) NSString* StructNames;
 @end
 
 @implementation EarthquakeCollectionViewController
@@ -34,7 +36,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return self.EQImages.count;
+    return [self.StructArray count];
 }
 
 /* Editted by Ethan on 3/3/2014
@@ -49,6 +51,13 @@
 
 - (void)viewDidLoad
 {
+    NSData* StructJson = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Structures" ofType:@"json"]];
+    NSError * error;
+    self.StructArray = [NSJSONSerialization JSONObjectWithData:StructJson options:0 error:&error];
+    if (error){
+        NSLog(@"Error in Structures.json file.");
+    }
+    
     [super viewDidLoad];
     
     /* Editted by Ethan on 3/3/2014
@@ -69,9 +78,9 @@
     UICollectionViewFlowLayout *flow = (UICollectionViewFlowLayout*) self.collectionViewLayout;
     flow.sectionInset = UIEdgeInsetsMake(90.0f, 15.0f, 10.0f, 15.0f);
     
-    self.EQImages = [@[@"Bridge-1.png",
-                       @"Hospital-1.png",
-                       @"House-1.png"] mutableCopy];
+    //self.EQImages = [@[@"Bridge-1.png",
+//                       @"Hospital-1.png",
+//                       @"House-1.png"] mutableCopy];
 	// Do any additional setup after loading the view.
     [self.collectionView registerClass:[EarthquakeCollectionCell class] forCellWithReuseIdentifier:@"EQCell"];
 }
@@ -80,13 +89,13 @@
 {
     EarthquakeCollectionCell *eqCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"EQCell" forIndexPath:indexPath];
     
-    long row = [indexPath row];
+    /*long row = [indexPath row];
     
-    /* Editted by Ethan on 3/6/2014
+    * Editted by Ethan on 3/6/2014
      * Hard code the earthquake pictures to include 
      * building type, thereby allowing the
      * images to be shown in the correct correspondence.
-     */
+     *
     
     NSString *imgName = self.EQImages[row];
     UIImage *img = [UIImage imageNamed:imgName];
@@ -97,6 +106,12 @@
     [eqCell addSubview:eqCell.eqImageView];
     [eqCell.eqImageView setImage:img];
     eqCell.buildingType = build;
+    */
+    
+    eqCell.eqImageView = [[UIImageView alloc] initWithFrame:eqCell.bounds];
+    [eqCell addSubview:eqCell.eqImageView];
+    [eqCell.eqImageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%@%d%@", [(NSDictionary*)self.StructArray[indexPath.row] objectForKey:@"imgBase"],1,[(NSDictionary*)self.StructArray[indexPath.row] objectForKey:@"imgExt"]]]];
+    eqCell.buildingType = [(NSDictionary*)self.StructArray[indexPath.row] objectForKey:@"imgBase"];
     return eqCell;
 }
 
@@ -119,6 +134,7 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item
+    [self.collectionView deselectItemAtIndexPath:indexPath animated:YES];
     EarthquakeCollectionCell *cell = (EarthquakeCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
     [self performSegueWithIdentifier:@"structure" sender:cell];
 }
