@@ -91,6 +91,7 @@
     NSString *imgName = self.EQImages[row];
     UIImage *img = [UIImage imageNamed:imgName];
     NSString *build = [imgName componentsSeparatedByString:@"-"][0];
+    build = [NSString stringWithFormat:@"%@-",build];
     
     eqCell.eqImageView = [[UIImageView alloc] initWithFrame:eqCell.bounds];
     [eqCell addSubview:eqCell.eqImageView];
@@ -110,16 +111,22 @@
 }
 
 #pragma mark - UICollectionViewDelegate
+
+/* Editted by Ethan on 3/6/2014
+ * Fixed the segue.
+ */
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item
-    [self performSegueWithIdentifier:@"structure" sender:self];
+    EarthquakeCollectionCell *cell = (EarthquakeCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"structure" sender:cell];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"structure"]) {
-        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:@"House"];
+        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:[sender buildingType]];
     }
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
