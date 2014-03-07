@@ -80,13 +80,23 @@
 {
     EarthquakeCollectionCell *eqCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"EQCell" forIndexPath:indexPath];
     
-    UIImage *img;
     long row = [indexPath row];
     
-    img = [UIImage imageNamed:self.EQImages[row]];
+    /* Editted by Ethan on 3/6/2014
+     * Hard code the earthquake pictures to include 
+     * building type, thereby allowing the
+     * images to be shown in the correct correspondence.
+     */
+    
+    NSString *imgName = self.EQImages[row];
+    UIImage *img = [UIImage imageNamed:imgName];
+    NSString *build = [imgName componentsSeparatedByString:@"-"][0];
+    build = [NSString stringWithFormat:@"%@-",build];
+    
     eqCell.eqImageView = [[UIImageView alloc] initWithFrame:eqCell.bounds];
     [eqCell addSubview:eqCell.eqImageView];
     [eqCell.eqImageView setImage:img];
+    eqCell.buildingType = build;
     return eqCell;
 }
 
@@ -101,16 +111,22 @@
 }
 
 #pragma mark - UICollectionViewDelegate
+
+/* Editted by Ethan on 3/6/2014
+ * Fixed the segue.
+ */
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     // TODO: Select Item
-    [self performSegueWithIdentifier:@"structure" sender:self];
+    EarthquakeCollectionCell *cell = (EarthquakeCollectionCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
+    [self performSegueWithIdentifier:@"structure" sender:cell];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"structure"]) {
-        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:@"House-"];
+        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:[sender buildingType]];
     }
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
