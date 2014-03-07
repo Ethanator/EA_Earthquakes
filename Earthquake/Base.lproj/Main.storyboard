@@ -152,7 +152,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GgO-hG-MRu">
-                                <rect key="frame" x="17" y="372" width="42" height="21"/>
+                                <rect key="frame" x="20" y="372" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -169,14 +169,22 @@
                                     <color key="titleColor" red="0.0" green="0.58603716443296372" blue="0.8762555803571429" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g8F-ZO-G6A">
+                                <rect key="frame" x="0.0" y="401" width="320" height="167"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kSv-iJ-fZ7"/>
                     <connections>
+                        <outlet property="afterPicText" destination="g8F-ZO-G6A" id="i6Y-DT-5N7"/>
                         <outlet property="backgroundImageView" destination="okU-sL-j5l" id="WsU-qq-3Fn"/>
                         <outlet property="buildingImage" destination="1bf-zL-XTq" id="5Tf-Uf-9gs"/>
                         <outlet property="replayButton" destination="XvF-sN-obv" id="dao-SL-XEJ"/>
+                        <outlet property="richterScale" destination="GgO-hG-MRu" id="YRJ-o0-8rn"/>
                         <outlet property="shakeButton" destination="ZuZ-PR-c0U" id="iXg-WD-rw8"/>
                         <outlet property="slideLabel" destination="GgO-hG-MRu" id="SQd-rQ-n5t"/>
                         <outlet property="slider" destination="rfV-fd-oiB" id="9xU-Ug-V7z"/>
