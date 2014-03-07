@@ -80,13 +80,22 @@
 {
     EarthquakeCollectionCell *eqCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"EQCell" forIndexPath:indexPath];
     
-    UIImage *img;
     long row = [indexPath row];
     
-    img = [UIImage imageNamed:self.EQImages[row]];
+    /* Editted by Ethan on 3/6/2014
+     * Hard code the earthquake pictures to include 
+     * building type, thereby allowing the
+     * images to be shown in the correct correspondence.
+     */
+    
+    NSString *imgName = self.EQImages[row];
+    UIImage *img = [UIImage imageNamed:imgName];
+    NSString *build = [imgName componentsSeparatedByString:@"-"][0];
+    
     eqCell.eqImageView = [[UIImageView alloc] initWithFrame:eqCell.bounds];
     [eqCell addSubview:eqCell.eqImageView];
     [eqCell.eqImageView setImage:img];
+    eqCell.buildingType = build;
     return eqCell;
 }
 
@@ -110,7 +119,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"structure"]) {
-        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:@"House-"];
+        [(EarthquakeShakeTableViewController *)segue.destinationViewController setBuildingType:@"House"];
     }
 }
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {

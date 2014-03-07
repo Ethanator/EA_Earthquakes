@@ -11,6 +11,6 @@
 @interface EarthquakeCollectionCell : UICollectionViewCell
 
 @property (strong, nonatomic) IBOutlet UIImageView *eqImageView;
-
+@property (strong, nonatomic) NSString *buildingType;
 
 @end
