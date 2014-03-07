@@ -78,10 +78,6 @@
     self.slider.transform = sliderRotation;
 }
 
-- (void)viewDidLayoutSubviews
-{
-}
-
 - (void)replayPressed:(id)sender
 {
     NSString *nextImgName = [NSString stringWithFormat:@"%@1.png", self.buildingType];
